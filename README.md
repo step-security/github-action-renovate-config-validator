@@ -1,0 +1,1 @@
+# github-action-renovate-config-validator
