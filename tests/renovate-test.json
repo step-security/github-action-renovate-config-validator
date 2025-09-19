@@ -1,0 +1,5 @@
+{
+  "extends": ["config:recommended"],
+  "schedule": ["before 4am"],
+  "labels": ["dependencies"]
+}
