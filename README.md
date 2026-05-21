@@ -6,6 +6,7 @@ GitHub Actions for renovate-config-validator
 
 ## :rocket: Recent Update
 
+- v2.1.0: Cache ~/.npm by default, which improves the performance and mitigates API rate limit issues
 - v2.0.0: Node.js 24 is installed by default to support the latest Renovate
 
 ## Input
@@ -82,6 +83,14 @@ You can pass `config_file_path` through output command.
         with:
           config_file_path: ${{ steps.files.outputs.files }}
 ```
+
+### `npm_cache`
+
+required: false
+
+Enable npm cache to speed up the installation of renovate.
+If it's "true", the npm cache is enabled.
+By default, the npm cache is enabled.
 
 ## Output
 
